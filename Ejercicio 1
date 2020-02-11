@@ -1,0 +1,43 @@
+class Bicicleta
+{
+	int velocidadActual;
+	int platoActual;
+	int piñonActual;
+	
+	Bicicleta(int velocidadActual, int platoActual, int piñonActual){
+		
+		this.velocidadActual=velocidadActual;
+		this.platoActual=platoActual;
+		this.piñonActual=piñonActual;
+	}
+	
+	Bicicleta (){
+	}
+	//Solamente los constructores no se les pone algo más. Si acaso si es public o private.
+
+
+	void acelerar(){	
+		velocidadActual=velocidadActual*2;
+	}
+
+	void frenar(){
+		velocidadActual/2;
+	}
+
+	cambiarPlato(int plato){
+		platoActual=plato;
+	}
+
+	cambiarPiñon(int piñon){
+		piñonActual=piñon
+	}
+}
+
+class Ejercicio1{
+	public static void main (String args[]){
+		Bicicleta miBicicleta=newBicicleta();
+		Bicicleta tuBicicleta=newBicicleta();
+	}
+}
+
+//Como el objeto no tiene parámetros, va a mandar a llamar el constructor que no tiene nada después de ejecutar new.
